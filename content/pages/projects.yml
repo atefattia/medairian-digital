@@ -1,0 +1,83 @@
+title: Projects
+
+projects:
+  - title: AI-Powered Image Recognition
+    image: https://picsum.photos/200/300
+    description: A deep learning model for real-time object detection and classification using state-of-the-art architectures.
+    tags:
+      - Python
+      - TensorFlow
+      - OpenCV
+    link: "#"
+
+  - title: NLP Text Analysis Platform
+    image: https://picsum.photos/200/301
+    description: A platform for analyzing and extracting insights from large text datasets using transformer models.
+    tags:
+      - Python
+      - BERT
+      - Natural Language Processing
+    link: "#"
+
+  - title: Computer Vision Analytics
+    image: https://picsum.photos/200/302
+    description: Advanced computer vision solutions for real-world applications.
+    tags:
+      - Python
+      - OpenCV
+      - Deep Learning
+    link: "#"
+
+  - title: ML Model Deployment Pipeline
+    image: https://picsum.photos/200/303
+    description: Streamlined pipeline for deploying machine learning models to production.
+    tags:
+      - MLOps
+      - Docker
+      - Kubernetes
+    link: "#"
+
+  - title: Computer Vision Healthcare System
+    image: https://picsum.photos/200/304
+    description: Medical imaging analysis system powered by deep learning.
+    tags:
+      - Healthcare AI
+      - PyTorch
+      - Medical Imaging
+    link: "#"
+
+  - title: AI Code Assistant
+    image: https://picsum.photos/200/305
+    description: Intelligent code completion and suggestion system.
+    tags:
+      - Machine Learning
+      - Code Analysis
+      - NLP
+    link: "#"
+
+  - title: Conversational AI Platform
+    image: https://picsum.photos/200/306
+    description: Advanced chatbot platform with natural language understanding.
+    tags:
+      - NLP
+      - Transformers
+      - Dialog Systems
+    link: "#"
+
+  - title: Time Series Forecasting Engine
+    image: https://picsum.photos/200/307
+    description: Predictive analytics system for time-series data.
+    tags:
+      - Time Series
+      - Prophet
+      - Deep Learning
+    link: "#"
+
+  - title: Data Pipeline Automation
+    image: https://picsum.photos/200/308
+    description: Automated data processing and transformation pipeline.
+    tags:
+      - Apache Airflow
+      - ETL
+      - Data Engineering
+    link: "#"

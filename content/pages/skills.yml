@@ -1,0 +1,30 @@
+title: Skills & Expertise
+subtitle: Machine Learning, Development, and Tools & Technologies
+
+skills:
+  - title: Machine Learning & AI
+    icon: M13 10V3L4 14h7v7l9-11h-7z
+    skills:
+      - Deep Learning
+      - Computer Vision
+      - LSTM-RNN
+      - CNN
+      - Face Recognition
+      - Movement Prediction
+
+  - title: Development Skills
+    icon: M13 10V3L4 14h7v7l9-11h-7z
+    skills:
+      - Backend Development
+      - Python
+      - Java
+
+  - title: Tools & Technologies
+    icon: M13 10V3L4 14h7v7l9-11h-7z
+    skills:
+      - Git
+      - Docker
+      - AWS
+      - TensorFlow
+      - PyTorch
+      - OpenCV
