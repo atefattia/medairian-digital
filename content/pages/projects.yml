@@ -1,53 +1,61 @@
 title: Projects
 
 projects:
-  - title: AI-Powered Image Recognition
-    image: https://picsum.photos/200/300
-    description: A deep learning model for real-time object detection and classification using state-of-the-art architectures.
+  - title: TV Ads Attribution
+    image: https://picsum.photos/id/91/200/300
+    description: A tool to measure the short-term online impact of TV ads by analyzing post-spot visit spikes and calculating website traffic attribution. 
     tags:
       - Python
-      - TensorFlow
-      - OpenCV
+      - ETL
+      - Data Engineering
+      - PySpark
+      - AWS
     link: "#"
 
-  - title: NLP Text Analysis Platform
-    image: https://picsum.photos/200/301
-    description: A platform for analyzing and extracting insights from large text datasets using transformer models.
+  - title: Time Series Forecasting
+    image: https://picsum.photos/id/116/200/300
+    description: Highly scalable metaflow pipelines to train and predict website traffic using time-series forecasting models.
     tags:
       - Python
+      - Prophet
+      - Time-Series
+      - Metaflow
+      - MLOps
+    link: "#"
+
+  - title: User Segmentation 
+    image: https://picsum.photos/id/67/200/300
+    description: Model for user segmentation and classification based on watching behavior, designed to optimize ads targeting strategies.  
+    tags:
+      - Python
+      - AWS SageMaker
+      - XGBoost
+      - Classification
+    link: "#"
+
+  - title: IAB Category Recognition
+    image: https://picsum.photos/id/62/200/300
+    description: Streamlined pipeline for deploying machine learning models to production.
+    tags:
+      - MLOps
       - BERT
       - Natural Language Processing
     link: "#"
 
-  - title: Computer Vision Analytics
-    image: https://picsum.photos/200/302
-    description: Advanced computer vision solutions for real-world applications.
+  - title: Conversational AI Platform
+    image: https://picsum.photos/id/71/200/300
+    description: Advanced chatbot platform to interact with internal knowledge bases using Retrieval-Augmented Generation (RAG).
     tags:
       - Python
-      - OpenCV
-      - Deep Learning
-    link: "#"
-
-  - title: ML Model Deployment Pipeline
-    image: https://picsum.photos/200/303
-    description: Streamlined pipeline for deploying machine learning models to production.
-    tags:
-      - MLOps
-      - Docker
-      - Kubernetes
-    link: "#"
-
-  - title: Computer Vision Healthcare System
-    image: https://picsum.photos/200/304
-    description: Medical imaging analysis system powered by deep learning.
-    tags:
-      - Healthcare AI
-      - PyTorch
-      - Medical Imaging
+      - Generative AI
+      - LLM
+      - Vector Database
+      - Embeddings
+      - Streamlit
     link: "#"
 
   - title: AI Code Assistant
-    image: https://picsum.photos/200/305
+    image: https://picsum.photos/id/77/200/300
     description: Intelligent code completion and suggestion system.
     tags:
       - Machine Learning
@@ -56,7 +64,7 @@ projects:
     link: "#"
 
   - title: Conversational AI Platform
-    image: https://picsum.photos/200/306
+    image: https://picsum.photos/id/34/200/300
     description: Advanced chatbot platform with natural language understanding.
     tags:
       - NLP
@@ -65,7 +73,7 @@ projects:
     link: "#"
 
   - title: Time Series Forecasting Engine
-    image: https://picsum.photos/200/307
+    image: https://picsum.photos/id/98/200/300
     description: Predictive analytics system for time-series data.
     tags:
       - Time Series
@@ -74,7 +82,7 @@ projects:
     link: "#"
 
   - title: Data Pipeline Automation
-    image: https://picsum.photos/200/308
+    image: https://picsum.photos/id/100/200/300
     description: Automated data processing and transformation pipeline.
     tags:
       - Apache Airflow
