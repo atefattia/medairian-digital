@@ -1,0 +1,33 @@
+site:
+  name: "Med.AI.rian"
+  description: "Empowering businesses with AI-driven solutions for the digital age"
+  
+navigation:
+  links:
+    - text: "Home"
+      url: "/"
+    - text: "About"
+      url: "/about"
+    - text: "Projects"
+      url: "/projects"
+    - text: "Skills"
+      url: "/skills"
+    - text: "Contact"
+      url: "/contact"
+
+footer:
+  copyright: "Med.AI.rian. All rights reserved."
+  links:
+    - text: "Privacy Policy"
+      url: "/privacy"
+    - text: "Terms of Service"
+      url: "/terms"
+    - text: "Blog"
+      url: "/blog"
+    - text: "Careers"
+      url: "/careers"
+
+contact:
+  email: "contact@medairian.com"
+  phone: "+1 (555) 123-4567"
+  address: "123 Innovation Drive, Silicon Valley, CA 94025"

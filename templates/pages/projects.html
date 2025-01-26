@@ -1,0 +1,440 @@
+{% extends "base.html" %}
+
+{% block title %}Projects - Med.AI.rian{% endblock %}
+
+{% block content %}
+<div class="bg-gradient-to-b from-sky-50 via-white to-white min-h-screen py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-sky-900 sm:text-4xl">
+                Projects
+            </h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                Explore our projects
+            </p>
+        </div>
+
+        <div class="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Project Card 1 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/300" alt="AI-Powered Image Recognition">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                AI-Powered Image Recognition
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            A deep learning model for real-time object detection and classification using state-of-the-art architectures.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                TensorFlow
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                OpenCV
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/301" alt="NLP Text Analysis Platform">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                NLP Text Analysis Platform
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            A platform for analyzing and extracting insights from large text datasets using transformer models.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                PyTorch
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                BERT
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/302" alt="Computer Vision Analytics">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                Computer Vision Analytics
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            Advanced computer vision system for real-time video analysis and pattern recognition.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                OpenCV
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                YOLO
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/303" alt="ML Model Deployment Pipeline">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                ML Model Deployment Pipeline
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            Automated pipeline for training, testing, and deploying machine learning models at scale.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                MLOps
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Docker
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Kubernetes
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/304" alt="Computer Vision Healthcare System">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                Computer Vision Healthcare System
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            AI-powered system for medical image analysis and disease detection using deep learning.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                PyTorch
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                FastAPI
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                DICOM
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/305" alt="AI Code Assistant">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                AI Code Assistant
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            An intelligent code completion and suggestion system powered by transformer models.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Transformers
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                VSCode
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 7 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/306" alt="Conversational AI Platform">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                Conversational AI Platform
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            Advanced chatbot platform with natural language understanding and sentiment analysis.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                GPT-3
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                React
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Node.js
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 8 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/307" alt="Time Series Forecasting Engine">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                Time Series Forecasting Engine
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            Advanced forecasting system using deep learning for complex time series prediction.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Prophet
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                LSTM
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 9 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/308" alt="Data Pipeline Automation">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                Data Pipeline Automation
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            Automated ETL pipeline with data validation and quality monitoring using ML.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Apache Airflow
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Spark
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                dbt
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 10 -->
+            <div class="flex flex-col rounded-lg shadow-sm overflow-hidden border border-sky-100 bg-white hover:shadow-lg transition-all duration-300">
+                <div class="flex-shrink-0">
+                    <img class="h-48 w-full object-cover" src="https://picsum.photos/200/309" alt="AutoML Platform">
+                </div>
+                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                    <div class="flex-1">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0">
+                                <div class="h-10 w-10 rounded-lg bg-gradient-to-r from-sky-700 to-blue-600 flex items-center justify-center">
+                                    <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-semibold text-sky-900">
+                                AutoML Platform
+                            </h3>
+                        </div>
+                        <div class="mt-3 text-base text-gray-500">
+                            Automated machine learning platform for model selection and hyperparameter optimization.
+                        </div>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Python
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Optuna
+                            </span>
+                            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-sky-100 text-sky-800">
+                                Ray
+                            </span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="text-base font-semibold text-sky-700 hover:text-sky-800 transition-colors duration-200">
+                                Learn more →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+title: "Get in Touch"
+
+contact_info:
+  title: "Contact Information"
+  items:
+    - type: "email"
+      value: "attia.atef92@gmail.com"
+    - type: "phone"
+      value: "+1 (123) 456-7890"
+    - type: "location"
+      value: "Munich, Germany"
+
+social_links:
+  title: "Connect with me"
+  links:
+    - platform: "LinkedIn"
+      url: "https://www.linkedin.com/in/atef-attia-b03307194/"
+    - platform: "GitHub"
+      url: "#"
+    - platform: "Twitter"
+      url: "#"

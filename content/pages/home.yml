@@ -1,0 +1,42 @@
+hero:
+  title: "Welcome to Med.AI.rian"
+  subtitle: "Senior Machine Learning Engineer | Combining technical expertise with a human touch to create data-driven solutions that matter."
+  buttons:
+    - text: "View Projects"
+      link: "/projects"
+    - text: "Contact Me"
+      link: "/contact"
+
+core_expertise:
+  title: "Core Expertise"
+  skills:
+    - title: "Machine Learning"
+      description: "Expertise in developing and deploying sophisticated ML models for real-world applications, with focus on scalability and performance."
+    
+    - title: "Deep Learning"
+      description: "Implementing cutting-edge neural networks and deep learning architectures for computer vision and NLP tasks."
+    
+    - title: "MLOps"
+      description: "Building and maintaining robust ML pipelines with automated testing, deployment, and monitoring systems."
+    
+    - title: "Cloud Computing"
+      description: "Expertise in AWS cloud services, infrastructure as code, and building scalable distributed systems."
+
+featured_projects:
+  title: "Featured Projects"
+  projects:
+    - title: "Computer Vision System"
+      description: "Advanced object detection and recognition system using state-of-the-art deep learning models."
+      link: "/projects"
+      tags:
+        - "PyTorch"
+        - "Computer Vision"
+        - "Deep Learning"
+    
+    - title: "NLP Pipeline"
+      description: "End-to-end natural language processing pipeline for text classification and sentiment analysis."
+      link: "/projects"
+      tags:
+        - "Transformers"
+        - "BERT"
+        - "NLP"

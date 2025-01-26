@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}About - Med.AI.rian{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-b from-sky-50 via-white to-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-sky-900">About Me</h1>
+        
+        <!-- Profile Section -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm p-8 mb-8 transition-all duration-300 hover:shadow-md hover:bg-white/90 border border-sky-100">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-sky-100 to-blue-100 ring-4 ring-white/50 shadow-lg">
+                    <!-- Profile photo placeholder -->
+                    <div class="w-full h-full flex items-center justify-center text-sky-400">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-2xl font-semibold mb-4 text-sky-900">Atef Attia</h2>
+                    <p class="text-sky-600 font-medium mb-2">Senior Machine Learning Engineer / Tech Lead</p>
+                    <p class="text-gray-600 mb-4">Steinhauser Str. 37 • Munich, 81677 Germany</p>
+                    <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                        <a href="mailto:attia.atef92@gmail.com" class="text-sky-600 hover:text-sky-700 transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>attia.atef92@gmail.com
+                        </a>
+                        <span class="text-gray-600">
+                            <i class="fas fa-phone mr-2"></i>+0049 157 55088832
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm p-8 mb-8 transition-all duration-300 hover:shadow-md hover:bg-white/90 border border-sky-100">
+            <h2 class="text-2xl font-semibold mb-6 text-sky-900">Professional Experience</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
+                    <h3 class="font-semibold text-xl text-sky-900">Senior Machine Learning Engineer / Tech Lead</h3>
+                    <p class="text-sky-600 font-medium">ProSiebenSat.1 Media SE • Munich, Germany</p>
+                    <p class="text-gray-500">Nov 2024 - Present</p>
+                    <ul class="mt-2 text-gray-600 space-y-2 list-disc ml-4">
+                        <li>Built a data pipeline in Databricks to calculate segment shares, driving optimized ad campaign placements.</li>
+                        <li>Organized a Knowledge Sharing Session to promote knowledge transfer and enhance synergy across the data department.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
+                    <h3 class="font-semibold text-xl text-sky-900">Machine Learning Engineer / Tech Lead</h3>
+                    <p class="text-sky-600 font-medium">ProSiebenSat.1 Media SE • Munich, Germany</p>
+                    <p class="text-gray-500">Apr 2022 - Nov 2024</p>
+                    <ul class="mt-2 text-gray-600 space-y-2 list-disc ml-4">
+                        <li>Led the development of a chatbot powered by Retrieval-Augmented Generation (RAG), helping sales teams quickly access internal information.</li>
+                        <li>Enhanced internal content categorization using IAB standards for precise contextual targeting.</li>
+                        <li>Trained forecasting models using Metaflow and MLflow for scalable ML pipelines.</li>
+                        <li>Developed a TV attribution algorithm to assess campaign effectiveness.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
+                    <h3 class="font-semibold text-xl text-sky-900">Associate Data Scientist</h3>
+                    <p class="text-sky-600 font-medium">ProSiebenSat.1 Media SE • Munich, Germany</p>
+                    <p class="text-gray-500">Dec 2021 - Apr 2022</p>
+                    <ul class="mt-2 text-gray-600 space-y-2 list-disc ml-4">
+                        <li>Refactored and migrated TV attribution system to AWS, reducing infrastructure costs by 60%.</li>
+                        <li>Implemented monitoring solutions for complex data pipelines, decreasing daily ops by 20%.</li>
+                        <li>Trained classification models for user behavior prediction to enhance targeting efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm p-8 mb-8 transition-all duration-300 hover:shadow-md hover:bg-white/90 border border-sky-100">
+            <h2 class="text-2xl font-semibold mb-6 text-sky-900">Education</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
+                    <h3 class="font-semibold text-xl text-sky-900">M.Sc. Computer Science</h3>
+                    <p class="text-sky-600 font-medium">Karlsruhe Institute of Technology – KIT • Karlsruhe, Germany</p>
+                    <p class="text-gray-500">Oct 2018 - Sep 2020 • Grade: 1.8</p>
+                    <p class="mt-2 text-gray-600">Focus: Machine Learning, Computer Vision and Deep Learning</p>
+                    <ul class="mt-2 text-gray-600 space-y-2 list-disc ml-4">
+                        <li>Trained an LSTM-based RNN for movement prediction and anomaly detection in shipping traffic.</li>
+                        <li>Applied data augmentation and transfer learning to train a CNN for face recognition with a small dataset.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
+                    <h3 class="font-semibold text-xl text-sky-900">B.Sc. Computer Science</h3>
+                    <p class="text-sky-600 font-medium">Karlsruhe Institute of Technology – KIT • Karlsruhe, Germany</p>
+                    <p class="text-gray-500">Oct 2014 - Sep 2018 • Grade: 2.4</p>
+                    <p class="mt-2 text-gray-600">Focus: Software Development</p>
+                    <ul class="mt-2 text-gray-600 space-y-2 list-disc ml-4">
+                        <li>Implemented a web-based course enrollment system using Play and Java.</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
+                    <h3 class="font-semibold text-xl text-sky-900">Diploma in Mathematics and Physics</h3>
+                    <p class="text-sky-600 font-medium">Tunis Preparatory Engineering Institute – IPEIT • Tunis, Tunisia</p>
+                    <p class="text-gray-500">Sep 2011 - Jul 2013</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm p-8 transition-all duration-300 hover:shadow-md hover:bg-white/90 border border-sky-100">
+            <h2 class="text-2xl font-semibold mb-6 text-sky-900">Technical Skills</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Machine Learning</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Deep Learning</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Computer Vision</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Python</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">AWS</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Databricks</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">MLflow</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Metaflow</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">Java</span>
+                <span class="px-4 py-2 bg-sky-50 text-sky-700 rounded-lg font-medium">RAG</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

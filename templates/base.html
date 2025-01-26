@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌊 {% block title %} {{ site.name }} {% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gradient-to-br from-sky-50 to-blue-50 min-h-full flex flex-col" x-data="{ mobileMenuOpen: false }">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-sky-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        {% if site and site.name %}
+                            <a href="/" class="text-3xl font-bold text-sky-700 hover:text-sky-800 transition-colors">{{ site.name }}</a>
+                        {% endif %}
+                    </div>
+                    <div class="hidden sm:ml-10 sm:flex sm:space-x-8 sm:items-center">
+                        {% if navigation and navigation.links %}
+                            {% for link in navigation.links %}
+                            <a href="{{ link.url }}" class="text-lg text-gray-600 hover:text-sky-700 transition-colors px-3 py-2">{{ link.text }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center sm:hidden">
+                    <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-flex items-center justify-center p-2 rounded-md text-sky-700 hover:text-sky-800 hover:bg-sky-50 transition-colors">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div x-show="mobileMenuOpen" class="sm:hidden bg-white border-t border-sky-100">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                {% if navigation and navigation.links %}
+                    {% for link in navigation.links %}
+                    <a href="{{ link.url }}" class="block px-3 py-2 text-base font-medium text-gray-600 hover:text-sky-700 hover:bg-sky-50 transition-colors">{{ link.text }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+                {% for category, message in messages %}
+                    <div class="rounded-md p-4 mb-4 {% if category == 'error' %}bg-red-50 text-red-700{% else %}bg-green-50 text-green-700{% endif %}">
+                        <p class="text-sm font-medium">{{ message }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-sky-100">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+                    {% if site and site.name %}
+                        <h3 class="text-lg font-semibold text-sky-900 mb-4">{{ site.name }}</h3>
+                    {% endif %}
+                    {% if site and site.description %}
+                        <p class="text-gray-600">{{ site.description }}</p>
+                    {% endif %}
+                </div>
+                
+                <!-- Quick Links -->
+                {% if footer and footer.links %}
+                <div>
+                    <h3 class="text-lg font-semibold text-sky-900 mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        {% for link in footer.links %}
+                        <li>
+                            <a href="{{ link.url }}" class="text-gray-600 hover:text-sky-700 transition-colors">{{ link.text }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                <!-- Contact -->
+                {% if contact %}
+                <div>
+                    <h3 class="text-lg font-semibold text-sky-900 mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        {% if contact.email %}<li class="text-gray-600">{{ contact.email }}</li>{% endif %}
+                        {% if contact.phone %}<li class="text-gray-600">{{ contact.phone }}</li>{% endif %}
+                        {% if contact.address %}<li class="text-gray-600">{{ contact.address }}</li>{% endif %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            
+            <!-- Copyright -->
+            <div class="mt-8 pt-8 border-t border-sky-100">
+                {% if site and site.name %}
+                    <p class="text-center text-gray-600">&copy; {{ current_year }} {{ site.name }}. All rights reserved.</p>
+                {% endif %}
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
