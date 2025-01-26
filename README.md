@@ -115,6 +115,169 @@ skills:
 
 The templates will automatically update to reflect any changes made to these YAML files, making content management simple and maintainable.
 
+## Deployment
+
+### Option 1: Heroku (Recommended for Simplicity)
+
+1. **Prerequisites**:
+   - Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+   - Create a Heroku account
+   - Install [Git](https://git-scm.com/)
+
+2. **Prepare the Application**:
+   ```bash
+   # Create Procfile
+   echo "web: gunicorn app:app" > Procfile
+   
+   # Add gunicorn to requirements
+   echo "gunicorn==21.2.0" >> requirements.txt
+   ```
+
+3. **Deploy to Heroku**:
+   ```bash
+   # Login to Heroku
+   heroku login
+   
+   # Create Heroku app
+   heroku create medairian-digital
+   
+   # Push to Heroku
+   git push heroku main
+   ```
+
+4. **Set Up Domain**:
+   ```bash
+   # Add domain to Heroku
+   heroku domains:add www.medairian.ai
+   heroku domains:add medairian.ai
+   ```
+
+5. **Configure DNS**:
+   - Get the DNS target from Heroku:
+     ```bash
+     heroku domains
+     ```
+   - Add these records to your domain registrar:
+     ```
+     CNAME www -> [your-heroku-dns-target]
+     ALIAS/ANAME @ -> [your-heroku-dns-target]
+     ```
+
+### Option 2: DigitalOcean Droplet (More Control)
+
+1. **Create Droplet**:
+   - Choose Ubuntu 22.04 LTS
+   - Select a plan ($5-$10/month is usually sufficient)
+   - Choose a datacenter near your target audience
+
+2. **Configure Server**:
+   ```bash
+   # Install required packages
+   sudo apt update
+   sudo apt install python3-pip python3-venv nginx
+
+   # Clone repository
+   git clone https://github.com/yourusername/medairian-digital.git
+   cd medairian-digital
+
+   # Set up Python environment
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   pip install gunicorn
+
+   # Create systemd service
+   sudo nano /etc/systemd/system/medairian.service
+   ```
+
+   Add this content:
+   ```ini
+   [Unit]
+   Description=Medairian Digital
+   After=network.target
+
+   [Service]
+   User=www-data
+   WorkingDirectory=/path/to/medairian-digital
+   Environment="PATH=/path/to/medairian-digital/venv/bin"
+   ExecStart=/path/to/medairian-digital/venv/bin/gunicorn -w 4 -b 127.0.0.1:8000 app:app
+
+   [Install]
+   WantedBy=multi-user.target
+   ```
+
+3. **Configure Nginx**:
+   ```bash
+   sudo nano /etc/nginx/sites-available/medairian
+   ```
+
+   Add this content:
+   ```nginx
+   server {
+       server_name medairian.ai www.medairian.ai;
+       
+       location / {
+           proxy_pass http://127.0.0.1:8000;
+           proxy_set_header Host $host;
+           proxy_set_header X-Real-IP $remote_addr;
+       }
+   }
+   ```
+
+4. **Enable HTTPS**:
+   ```bash
+   # Install Certbot
+   sudo apt install certbot python3-certbot-nginx
+   
+   # Get SSL certificate
+   sudo certbot --nginx -d medairian.ai -d www.medairian.ai
+   ```
+
+### Important Considerations
+
+1. **SSL Certificate**:
+   - Always use HTTPS
+   - Let's Encrypt provides free SSL certificates
+   - Set up auto-renewal for certificates
+
+2. **Environment Variables**:
+   - Never commit sensitive data to Git
+   - Use environment variables for:
+     - API keys
+     - Database credentials
+     - Secret keys
+     ```bash
+     # On Heroku
+     heroku config:set SECRET_KEY=your_secret_key
+     ```
+
+3. **Backups**:
+   - Regularly backup any user-generated content
+   - Keep database backups if you add one later
+
+4. **Monitoring**:
+   - Set up uptime monitoring (e.g., UptimeRobot)
+   - Monitor error logs
+   - Set up alerts for server issues
+
+5. **Performance**:
+   - Use a CDN for static files (e.g., Cloudflare)
+   - Enable caching where appropriate
+   - Optimize images and assets
+
+6. **Security**:
+   - Keep all packages updated
+   - Set up firewall rules
+   - Regular security audits
+   - Enable rate limiting for APIs
+
+7. **Costs to Consider**:
+   - Domain registration (~$70-100/year for .ai)
+   - Hosting ($5-20/month)
+   - SSL certificate (free with Let's Encrypt)
+   - CDN (optional, often has free tier)
+   - Backup storage (if needed)
+
 ## Features
 
 - Modern, responsive design

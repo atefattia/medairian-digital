@@ -27,7 +27,6 @@ def about():
 @bp.route('/projects')
 def projects():
     content = content_loader.get_page_content('projects')
-    print(content)
     return render_template('pages/projects.html', **content)
 
 @bp.route('/skills')
