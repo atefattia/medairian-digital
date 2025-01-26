@@ -6,7 +6,7 @@ contact_info:
     - type: "email"
       value: "attia.atef92@gmail.com"
     - type: "phone"
-      value: "+1 (123) 456-7890"
+      value: "+49 157 55088832"
     - type: "location"
       value: "Munich, Germany"
 
@@ -16,6 +16,6 @@ social_links:
     - platform: "LinkedIn"
       url: "https://www.linkedin.com/in/atef-attia-b03307194/"
     - platform: "GitHub"
-      url: "#"
+      url: "https://github.com/atefattia"
     - platform: "Instagram"
       url: "https://www.instagram.com/atefattia/"
