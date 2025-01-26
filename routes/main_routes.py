@@ -2,13 +2,13 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 from datetime import datetime
 from flask_mail import Mail, Message
 from utils.content_loader import ContentLoader
-import os
+import pathlib
 
 bp = Blueprint('main', __name__)
 mail = Mail()
 
 # Initialize content loader
-content_loader = ContentLoader(os.path.join(os.path.dirname(os.path.dirname(__file__)), 'content'))
+content_loader = ContentLoader(pathlib.Path(__file__).parent.parent / 'content')
 
 @bp.context_processor
 def inject_current_year():
