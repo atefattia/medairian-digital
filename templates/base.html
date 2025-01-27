@@ -70,27 +70,27 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white border-t border-sky-100">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer class="bg-white border-t border-sky-100 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Company Info -->
                 <div>
                     {% if site and site.name %}
-                        <h3 class="text-lg font-semibold text-sky-900 mb-4">{{ site.name }}</h3>
+                        <h3 class="text-lg font-semibold text-sky-800 mb-3">{{ site.name }}</h3>
                     {% endif %}
                     {% if site and site.description %}
-                        <p class="text-gray-600">{{ site.description }}</p>
+                        <p class="text-sm text-gray-600">{{ site.description }}</p>
                     {% endif %}
                 </div>
                 
                 <!-- Quick Links -->
                 {% if footer and footer.links %}
                 <div>
-                    <h3 class="text-lg font-semibold text-sky-900 mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
+                    <h3 class="text-lg font-semibold text-sky-800 mb-3">Quick Links</h3>
+                    <ul class="space-y-1">
                         {% for link in footer.links %}
                         <li>
-                            <a href="{{ link.url }}" class="text-gray-600 hover:text-sky-700 transition-colors">{{ link.text }}</a>
+                            <a href="{{ link.url }}" class="text-sm text-gray-600 hover:text-sky-700 transition-colors">{{ link.text }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -100,24 +100,40 @@
                 <!-- Contact -->
                 {% if contact %}
                 <div>
-                    <h3 class="text-lg font-semibold text-sky-900 mb-4">Contact</h3>
-                    <ul class="space-y-2">
-                        {% if contact.email %}<li class="text-gray-600">{{ contact.email }}</li>{% endif %}
-                        {% if contact.phone %}<li class="text-gray-600">{{ contact.phone }}</li>{% endif %}
-                        {% if contact.address %}<li class="text-gray-600">{{ contact.address }}</li>{% endif %}
+                    <h3 class="text-lg font-semibold text-sky-800 mb-3">Contact</h3>
+                    <ul class="space-y-1">
+                        {% if contact.email %}<li class="text-sm text-gray-600">{{ contact.email }}</li>{% endif %}
+                        {% if contact.phone %}<li class="text-sm text-gray-600">{{ contact.phone }}</li>{% endif %}
+                        {% if contact.address %}<li class="text-sm text-gray-600">{{ contact.address }}</li>{% endif %}
                     </ul>
                 </div>
                 {% endif %}
             </div>
             
             <!-- Copyright -->
-            <div class="mt-8 pt-8 border-t border-sky-100">
+            <div class="mt-6 pt-4 border-t border-sky-100 text-center">
                 {% if site and site.name %}
-                    <p class="text-center text-gray-600">&copy; {{ current_year }} {{ site.name }}. All rights reserved.</p>
+                    <p class="text-sm text-gray-600">&copy; {{ current_year }} {{ site.name }}. All rights reserved.</p>
                 {% endif %}
             </div>
         </div>
     </footer>
+
+    <!-- Custom Tailwind Animations -->
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 15s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
 
     <!-- Scripts -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>

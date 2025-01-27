@@ -19,13 +19,13 @@ footer:
   copyright: "Med.AI.rian. All rights reserved."
   links:
     - text: "Privacy Policy"
-      url: "/privacy"
+      url: "#"
     - text: "Terms of Service"
-      url: "/terms"
+      url: "#"
     - text: "Blog"
-      url: "/blog"
+      url: "#"
     - text: "Careers"
-      url: "/careers"
+      url: "#"
 
 contact:
   email: "contact@medairian.com"
