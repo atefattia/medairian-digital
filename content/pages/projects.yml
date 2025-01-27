@@ -1,8 +1,20 @@
 title: Projects
 
 projects:
+  - title: Conversational AI Chatbot
+    image: https://picsum.photos/id/71/200/300?grayscale
+    description: Advanced chatbot application to interact with internal knowledge bases using Retrieval-Augmented Generation (RAG).
+    tags:
+      - Python
+      - Generative AI
+      - LLM
+      - Vector Database
+      - Embeddings
+      - Streamlit
+    link: "#"
+
   - title: TV Ads Attribution
-    image: https://picsum.photos/id/91/200/300
+    image: https://picsum.photos/id/91/200/300?grayscale
     description: A tool to measure the short-term online impact of TV ads by analyzing post-spot visit spikes and calculating website traffic attribution. 
     tags:
       - Python
@@ -12,8 +24,30 @@ projects:
       - AWS
     link: "#"
 
+  - title: IAB Category Recognition
+    image: https://picsum.photos/id/57/200/300?grayscale
+    description: IAB category classification of video content for contextual targeting. 
+    tags:
+      - GumGum
+      - Segmentation
+      - Transcriber
+      - Natural Language Processing
+      - BERT
+    link: "#"
+
+  - title: Data Pipeline Automation
+    image: https://picsum.photos/id/58/200/300
+    description: Automated data processing and transformation pipeline.
+    tags:
+      - Databricks
+      - Python
+      - ETL
+      - PySpark
+      - Data Engineering
+    link: "#"
+
   - title: Time Series Forecasting
-    image: https://picsum.photos/id/116/200/300
+    image: https://picsum.photos/id/116/200/300?grayscale
     description: Highly scalable metaflow pipelines to train and predict website traffic using time-series forecasting models.
     tags:
       - Python
@@ -24,7 +58,7 @@ projects:
     link: "#"
 
   - title: User Segmentation 
-    image: https://picsum.photos/id/67/200/300
+    image: https://picsum.photos/id/49/200/300?grayscale
     description: Model for user segmentation and classification based on watching behavior, designed to optimize ads targeting strategies.  
     tags:
       - Python
@@ -33,59 +67,33 @@ projects:
       - Classification
     link: "#"
 
-  - title: IAB Category Recognition
-    image: https://picsum.photos/id/62/200/300
-    description: Streamlined pipeline for deploying machine learning models to production.
+  - title: Monitoring System
+    image: https://picsum.photos/id/270/200/300?grayscale
+    description: Monitoring web application for an improved data pipeline monitoring and alerting.
     tags:
-      - MLOps
-      - BERT
-      - Natural Language Processing
-    link: "#"
-
-  - title: Conversational AI Platform
-    image: https://picsum.photos/id/71/200/300
-    description: Advanced chatbot platform to interact with internal knowledge bases using Retrieval-Augmented Generation (RAG).
-    tags:
+      - Software Development
       - Python
-      - Generative AI
-      - LLM
-      - Vector Database
-      - Embeddings
-      - Streamlit
+      - Flask
+      - HTML
+      - CSS
     link: "#"
 
-  - title: AI Code Assistant
-    image: https://picsum.photos/id/77/200/300
-    description: Intelligent code completion and suggestion system.
+  - title: Anomaly Detection System
+    image: https://picsum.photos/id/77/200/300?grayscale
+    description: System for detecting anomalies in acoustic signal using unsupervised learning techniques.
     tags:
-      - Machine Learning
-      - Code Analysis
-      - NLP
-    link: "#"
-
-  - title: Conversational AI Platform
-    image: https://picsum.photos/id/34/200/300
-    description: Advanced chatbot platform with natural language understanding.
-    tags:
-      - NLP
-      - Transformers
-      - Dialog Systems
-    link: "#"
-
-  - title: Time Series Forecasting Engine
-    image: https://picsum.photos/id/98/200/300
-    description: Predictive analytics system for time-series data.
-    tags:
-      - Time Series
-      - Prophet
       - Deep Learning
+      - Computer Vision
+      - Anomaly Detection
+      - CNN
+      - Clustering
     link: "#"
 
-  - title: Data Pipeline Automation
-    image: https://picsum.photos/id/100/200/300
-    description: Automated data processing and transformation pipeline.
+  - title: Reporting Dashboard
+    image: https://picsum.photos/id/78/200/300?grayscale
+    description: Real-time reporting dashboard for monitoring of 8D reports for manufacturing nonconformities.
     tags:
-      - Apache Airflow
-      - ETL
-      - Data Engineering
+      - BI
+      - QlikSense
+      - Reporting
     link: "#"

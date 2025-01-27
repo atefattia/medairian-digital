@@ -13,11 +13,11 @@ core_expertise:
     - title: "Machine Learning"
       description: "Expertise in developing and deploying sophisticated ML models for real-world applications, with focus on scalability and performance."
     
-    - title: "Deep Learning"
-      description: "Implementing cutting-edge neural networks and deep learning architectures for computer vision and NLP tasks."
-    
     - title: "MLOps"
       description: "Building and maintaining robust ML pipelines with automated testing, deployment, and monitoring systems."
+
+    - title: "Data Engineering"
+      description: "Designing and implementing efficient data pipelines, ETL processes, and data storage solutions to support analytics and machine learning workflows."
     
     - title: "Cloud Computing"
       description: "Expertise in AWS cloud services, infrastructure as code, and building scalable distributed systems."
