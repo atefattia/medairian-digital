@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Articles - Med.AI.rian{% endblock %}
+
+{% block content %}
+<div class="bg-gradient-to-b from-sky-50 via-white to-white min-h-screen py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-sky-900 sm:text-4xl">
+                {{ title }}
+            </h2>
+            <p class="mt-4 text-xl text-gray-600">
+                {{ subtitle }}
+            </p>
+        </div>
+
+        {% for section in article_sections %}
+        <div class="mb-12">
+            <div class="mb-6 border-b border-sky-200 pb-3">
+                <h3 class="text-2xl font-bold text-sky-800">
+                    {{ section.name }}
+                </h3>
+            </div>
+
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                {% for article in section.articles %}
+                <div class="bg-white rounded-lg shadow-sm border border-sky-100 hover:shadow-md transition-all duration-300 group relative">
+                    <a href="{{ article.link }}" target="_blank" class="block p-4 pb-2">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="h-8 w-8 rounded-lg bg-white border border-sky-100 flex items-center justify-center overflow-hidden">
+                                    {% if article.platform == 'medium' %}
+                                    <img src="{{ article.logo }}" alt="{{ article.platform }} logo" class="h-full w-full object-contain">
+                                    {% elif article.platform == 'substack' %}
+                                    <svg class="h-6 w-6 text-sky-700" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M22.539 8.242H1.46V5.406h21.08zM1.46 10.812V24l10.54-5.342L22.54 24V10.812zM22.54 0H1.46v3.913h21.08z"/>
+                                    </svg>
+                                    {% else %}
+                                    <svg class="h-6 w-6 text-sky-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                    </svg>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-base font-semibold text-sky-900 group-hover:text-sky-700 transition-colors">
+                                    {{ article.title }}
+                                </h4>
+                                {% if article.tags %}
+                                <div class="mt-2 flex flex-wrap gap-1.5">
+                                    {% for tag in article.tags %}
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-sky-50 text-sky-700 border border-sky-200">
+                                        {{ tag }}
+                                    </span>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </a>
+                    <div class="absolute bottom-0 right-0 p-3">
+                        <svg class="h-5 w-5 text-sky-500 group-hover:text-sky-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -49,8 +49,12 @@
                                 <i class="fab fa-linkedin-in text-lg"></i>
                                 {% elif link.platform == "GitHub" %}
                                 <i class="fab fa-github text-lg"></i>
-                                {% elif link.platform == "Twitter" %}
-                                <i class="fab fa-twitter text-lg"></i>
+                                {% elif link.platform == "Medium" %}
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M0 0v24h24V0H0zm19.938 5.686L18.651 6.92a.376.376 0 0 0-.143.362v9.067a.376.376 0 0 0 .143.361l1.257 1.234v.271h-6.322v-.271l1.302-1.265c.128-.128.128-.165.128-.361V8.99l-3.62 9.195h-.49L6.69 8.99v6.163a.851.851 0 0 0 .233.707l1.694 2.054v.271H3.815v-.271l1.694-2.054a.82.82 0 0 0 .218-.707V8.027a.624.624 0 0 0-.203-.527L3.815 5.686v-.27h4.665l3.609 7.916 3.176-7.916h4.456v.27z"/>
+                                </svg>
+                                {% elif link.platform == "Instagram" %}
+                                <i class="fab fa-instagram text-lg"></i>
                                 {% endif %}
                             </a>
                             {% endfor %}

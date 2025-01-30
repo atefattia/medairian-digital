@@ -1,0 +1,54 @@
+title: Insights & Knowledge Hub
+subtitle: Explore my collection of blogs and articles.
+article_sections:
+  - name: AI & Machine Learning
+    articles:
+      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
+        platform: medium
+        tags: ['LLM', 'AI', 'ChatGPT']
+        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        logo: static/images/articles/medium_logo.png
+
+      - title: To production and beyond - How Metaflow helps us turn proof-of-concepts into products ✨
+        platform: medium
+        tags: ['P7S1', 'Metaflow', 'Evaluation Pipeline', 'MLOps']
+        link: https://medium.com/tech-p7s1/to-production-and-beyond-how-metaflow-helps-us-turn-proof-of-concepts-into-products-6944e1493935
+        logo: static/images/articles/medium_logo.png
+
+      - title: P7S1 x Munich Datageeks 🔥
+        platform: medium
+        tags: ['P7S1', 'Datageeks', 'AI x Media']
+        link: https://medium.com/tech-p7s1/p7s1-x-munich-datageeks-9138676f56f6
+        logo: static/images/articles/medium_logo.png
+
+  - name: Code & Development
+    articles:
+      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
+        description: .
+        platform: medium
+        tags: ['LLM', 'AI', 'ChatGPT']
+        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        logo: static/images/articles/medium_logo.png
+
+      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
+        description: .
+        platform: medium
+        tags: ['LLM', 'AI', 'ChatGPT']
+        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        logo: static/images/articles/medium_logo.png
+
+  - name: Data Pipelines
+    articles:
+      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
+        description: .
+        platform: medium
+        tags: ['LLM', 'AI', 'ChatGPT']
+        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        logo: static/images/articles/medium_logo.png
+
+      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
+        description: .
+        platform: medium
+        tags: ['LLM', 'AI', 'ChatGPT']
+        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        logo: static/images/articles/medium_logo.png

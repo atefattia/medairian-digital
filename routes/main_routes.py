@@ -34,6 +34,11 @@ def skills():
     content = content_loader.get_page_content('skills')
     return render_template('pages/skills.html', **content)
 
+@bp.route('/articles')
+def articles():
+    content = content_loader.get_page_content('articles')
+    return render_template('pages/articles.html', **content)
+
 @bp.route('/contact')
 def contact():
     content = content_loader.get_page_content('contact')
