@@ -23,11 +23,10 @@ article_sections:
 
   - name: Code & Development
     articles:
-      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
-        description: .
+      - title: UV is all you need! ✨
         platform: medium
-        tags: ['LLM', 'AI', 'ChatGPT']
-        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        tags: ['Python', 'UV', 'Dependency Management', 'Virtual Environment']
+        link: https://medium.com/@attia.atef92/uv-is-all-you-need-f7f23d764162
         logo: static/images/articles/medium_logo.png
 
       - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
@@ -39,15 +38,13 @@ article_sections:
 
   - name: Data Pipelines
     articles:
-      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
-        description: .
+      - title: UV is all you need! ✨
         platform: medium
-        tags: ['LLM', 'AI', 'ChatGPT']
-        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        tags: ['Python', 'UV', 'Dependency Management', 'Virtual Environment']
+        link: https://medium.com/@attia.atef92/uv-is-all-you-need-f7f23d764162
         logo: static/images/articles/medium_logo.png
 
       - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
-        description: .
         platform: medium
         tags: ['LLM', 'AI', 'ChatGPT']
         link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
