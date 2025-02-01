@@ -1,6 +1,7 @@
 site:
-  name: "Med.AI.rian"
-  description: "Atef Attia 👋 Senior ML Engineer"
+  site_name: "Med.AI.rian"
+  name: "Atef Attia 👋"
+  role: "Senior ML Engineer"
 
 navigation:
   links:
@@ -25,11 +26,11 @@ footer:
     - text: "Terms of Service"
       url: "#"
     - text: "Blog"
-      url: "#"
+      url: "/articles"
     - text: "Careers"
       url: "#"
 
 contact:
-  email: "contact@medairian.com"
-  phone: "+1 (555) 123-4567"
-  address: "123 Innovation Drive, Silicon Valley, CA 94025"
+  email: "medairian@gmail.com"
+  phone: "+49 157 55088832"
+  address: "Munich, Germany"
