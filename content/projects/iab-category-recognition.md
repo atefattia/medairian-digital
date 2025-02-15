@@ -1,4 +1,5 @@
-# Conversational AI Chatbot
+# IAB Category Recognition
+[← Back to Projects](/projects)
 
 ## Project Details
 Advanced chatbot application to interact with internal knowledge bases using Retrieval-Augmented Generation (RAG).

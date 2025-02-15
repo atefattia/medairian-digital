@@ -1,4 +1,5 @@
 # Time Series Forecasting 📈
+[← Back to Projects](/projects)
 
 ## Project Details
 [Detailed description of the project, its purpose, challenges, and solutions]
