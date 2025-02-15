@@ -12,7 +12,7 @@ projects:
       - Vector Database
       - Embeddings
       - Streamlit
-    link: "#"
+    link: "/projects/conversational-ai-chatbot.md"
 
   - title: TV Ads Attribution
     image: https://picsum.photos/id/91/200/300?grayscale
@@ -23,7 +23,7 @@ projects:
       - Data Engineering
       - PySpark
       - AWS
-    link: "#"
+    link: "/projects/tv-ads-attribution.md"
 
   - title: IAB Category Recognition
     image: https://picsum.photos/id/57/200/300?grayscale
@@ -34,7 +34,7 @@ projects:
       - Transcriber
       - Natural Language Processing
       - BERT
-    link: "#"
+    link: "/projects/iab-category-recognition.md"
 
   - title: Data Pipeline Automation
     image: https://picsum.photos/id/58/200/300
@@ -45,7 +45,7 @@ projects:
       - ETL
       - PySpark
       - Data Engineering
-    link: "#"
+    link: "/projects/data-pipeline-automation.md"
 
   - title: Time Series Forecasting
     image: https://picsum.photos/id/116/200/300?grayscale
@@ -56,7 +56,7 @@ projects:
       - Time-Series
       - Metaflow
       - MLOps
-    link: "#"
+    link: "/projects/time-series-forecasting.md"
 
   - title: User Segmentation 
     image: https://picsum.photos/id/49/200/300?grayscale
@@ -66,7 +66,7 @@ projects:
       - AWS SageMaker
       - XGBoost
       - Classification
-    link: "#"
+    link: "/projects/user-segmentation.md" 
 
   - title: Monitoring System
     image: https://picsum.photos/id/270/200/300?grayscale
@@ -77,7 +77,7 @@ projects:
       - Flask
       - HTML
       - CSS
-    link: "#"
+    link: "/projects/monitoring-system.md"
 
   - title: Anomaly Detection System
     image: https://picsum.photos/id/77/200/300?grayscale
@@ -88,7 +88,7 @@ projects:
       - Anomaly Detection
       - CNN
       - Clustering
-    link: "#"
+    link: "/projects/anomaly-detection-system.md"
 
   - title: Reporting Dashboard
     image: https://picsum.photos/id/78/200/300?grayscale
@@ -97,4 +97,4 @@ projects:
       - BI
       - QlikSense
       - Reporting
-    link: "#"
+    link: "/projects/reporting-dashboard.md" 

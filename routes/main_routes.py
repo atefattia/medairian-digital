@@ -3,6 +3,8 @@ from datetime import datetime
 from flask_mail import Mail, Message
 from utils.content_loader import ContentLoader
 import pathlib
+import markdown2
+from flask import send_from_directory
 
 bp = Blueprint('main', __name__)
 mail = Mail()
@@ -28,6 +30,30 @@ def about():
 def projects():
     content = content_loader.get_page_content('projects')
     return render_template('pages/projects.html', **content)
+
+@bp.route('/projects/<path:filename>')
+def project_detail(filename):
+    """Serve individual project Markdown files"""
+    # Ensure the file is a Markdown file and exists in the projects directory
+    if not filename.endswith('.md'):
+        return 'Not Found', 404
+    
+    project_path = pathlib.Path(__file__).parent.parent / 'content' / 'projects' / filename
+    
+    if not project_path.exists():
+        return 'Not Found', 404
+    
+    # Read the Markdown content and convert to HTML
+    with open(project_path, 'r', encoding='utf-8') as f:
+        markdown_content = f.read()
+        html_content = markdown2.markdown(markdown_content, extras=['fenced-code-blocks', 'tables'])
+    
+    # Render the new template
+    return render_template('pages/project_detail.html', markdown_content=html_content)
+
+@bp.route('/static/images/projects/<path:filename>')
+def serve_project_image(filename):
+    return send_from_directory('static/images/projects', filename)
 
 @bp.route('/skills')
 def skills():

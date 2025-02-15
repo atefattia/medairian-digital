@@ -1,15 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask
 from flask_mail import Mail
 from config import Config
+from routes import main_routes
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 app.config.from_object(Config)
 
 # Initialize Flask-Mail
 mail = Mail(app)
-
-# Import routes after app initialization to avoid circular imports
-from routes import main_routes
 
 # Pass mail instance to routes
 main_routes.mail = mail
