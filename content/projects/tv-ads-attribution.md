@@ -1,5 +1,5 @@
 # TV Ads Attribution 📺
-[← Back to Projects](/projects)
+<a href="/projects" class="inline-flex items-center px-4 py-2 bg-sky-50 text-sky-700 hover:bg-sky-100 rounded-full text-sm font-medium transition-colors duration-300 ease-in-out shadow-sm hover:shadow-md border border-sky-100">← Back to Projects</a>
 
 ## Project Details
 This tool measures the short-term online impact of TV advertisements by analyzing post-spot visit spikes and calculating website traffic attribution. This system helps businesses evaluate the effectiveness of their TV campaigns by tracking key performance indicators (KPIs) such as website visits and conversions. It supports TV spots from various sources and integrates seamlessly with user tracking platforms like [Google Analytics](https://marketingplatform.google.com/about/analytics/), [Mapp](https://mapp.com/), and [Adjust](https://www.adjust.com/), enabling a comprehensive evaluation of TV campaign performance across multiple channels.
@@ -31,4 +31,4 @@ I began as an Associate, assisting with the refactoring and cloud migration of a
 - Integrated into partner TV campaign packages, with budgets ranging from **€100K to several million**.
 
 ## Technologies
-`Python`  `ETL`  `Data Engineering`  `PySpark`  `AWS Glue`  `AWS DynamoDB`  `AWS Athena`  `AWS Lambda`  `AWS EC2`  `AWS S3`  `AWS Kinesis`  `AWS Step Functions`  `AWS CloudWatch`  `AWS SNS`
+`Python`  `ETL`  `Data Engineering`  `PySpark`  `AWS Glue`  `AWS DynamoDB`  `AWS Athena`  `AWS Lambda`  `AWS EC2`  `AWS S3`  `AWS Kinesis`  `AWS Step Functions`  `AWS CloudWatch`  `AWS SNS`  `Google BigQuery`  `Google Analytics`  `Mapp`  `Adjust`  `Nielsen`

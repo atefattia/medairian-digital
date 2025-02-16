@@ -24,19 +24,4 @@ core_expertise:
 
 featured_projects:
   title: "Featured Projects"
-  projects:
-    - title: "Computer Vision System"
-      description: "Advanced object detection and recognition system using state-of-the-art deep learning models."
-      link: "/projects"
-      tags:
-        - "PyTorch"
-        - "Computer Vision"
-        - "Deep Learning"
-    
-    - title: "NLP Pipeline"
-      description: "End-to-end natural language processing pipeline for text classification and sentiment analysis."
-      link: "/projects"
-      tags:
-        - "Transformers"
-        - "BERT"
-        - "NLP"
+  # Projects will be dynamically selected from projects.yml with 'featured: true'

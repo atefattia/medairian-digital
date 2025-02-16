@@ -12,6 +12,7 @@ profile:
 professional_experience:
   - title: "Senior Machine Learning Engineer / Tech Lead"
     company: "ProSiebenSat.1 Media SE"
+    logo: "/static/images/about/P7S1_BM_Red_pos_RGB.ico"
     location: "Munich, Germany"
     period: "Nov 2024 - Present"
     responsibilities:
@@ -20,6 +21,7 @@ professional_experience:
 
   - title: "Machine Learning Engineer / Tech Lead"
     company: "ProSiebenSat.1 Media SE"
+    logo: "/static/images/about/P7S1_BM_Red_pos_RGB.ico"
     location: "Munich, Germany"
     period: "Apr 2022 - Nov 2024"
     responsibilities:
@@ -30,6 +32,7 @@ professional_experience:
 
   - title: "Associate Data Scientist"
     company: "ProSiebenSat.1 Media SE"
+    logo: "/static/images/about/P7S1_BM_Red_pos_RGB.ico"
     location: "Munich, Germany"
     period: "Dec 2021 - Apr 2022"
     responsibilities:
@@ -40,6 +43,7 @@ professional_experience:
 education:
   - degree: "M.Sc. Computer Science"
     institution: "Karlsruhe Institute of Technology – KIT"
+    logo: "/static/images/about/Logo_KIT.svg"
     location: "Karlsruhe, Germany"
     period: "Oct 2018 - Sep 2020"
     grade: "1.8"
@@ -50,6 +54,7 @@ education:
 
   - degree: "B.Sc. Computer Science"
     institution: "Karlsruhe Institute of Technology – KIT"
+    logo: "/static/images/about/Logo_KIT.svg"
     location: "Karlsruhe, Germany"
     period: "Oct 2014 - Sep 2018"
     grade: "2.4"
@@ -59,17 +64,23 @@ education:
 
   - degree: "Diploma in Mathematics and Physics"
     institution: "Tunis Preparatory Engineering Institute – IPEIT"
+    logo: "/static/images/about/ipeit_logo.png"
     location: "Tunis, Tunisia"
     period: "Sep 2011 - Jul 2013"
+    focus: "Mathematics and Physics"
 
 technical_skills:
+  - "Python"
   - "Machine Learning"
   - "Deep Learning"
-  - "Computer Vision"
-  - "Python"
   - "AWS"
   - "Databricks"
   - "MLflow"
   - "Metaflow"
-  - "Java"
+  - "MLOps"
   - "RAG"
+  - "Generative AI"
+  - "LLMs"
+  - "Data Engineering"
+  - "PySpark"
+  - "Cloud Computing"

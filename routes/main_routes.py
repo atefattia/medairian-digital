@@ -19,6 +19,8 @@ def inject_current_year():
 @bp.route('/')
 def index():
     content = content_loader.get_page_content('home')
+    projects_content = content_loader.get_page_content('projects')
+    content['projects'] = projects_content.get('projects', [])
     return render_template('pages/home.html', **content)
 
 @bp.route('/about')

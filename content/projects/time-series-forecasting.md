@@ -1,37 +1,20 @@
 # Time Series Forecasting 📈
-[← Back to Projects](/projects)
+<a href="/projects" class="inline-flex items-center px-4 py-2 bg-sky-50 text-sky-700 hover:bg-sky-100 rounded-full text-sm font-medium transition-colors duration-300 ease-in-out shadow-sm hover:shadow-md border border-sky-100">← Back to Projects</a>
 
 ## Project Details
-[Detailed description of the project, its purpose, challenges, and solutions]
+[WIP 🚧]
 
 ## Key Features
-- Feature 1
-- Feature 2
-- Feature 3
+- [WIP 🚧]
 
 ## My Contribution
-[Technical details about how the project was built]
-```python
-def main():
-    print("Hello, World!")
-
-if __name__ == "__main__":
-    main()
-```
-
-```bash
-source venv/bin/activate  # On Unix/macOS
-```
+[WIP 🚧]
 
 ## Challenges and Solutions
-[Discuss any interesting challenges and how they were overcome]
+- [WIP 🚧]
 
 ## Outcome
-[Summary of the project's impact and value to the organization]
+- [WIP 🚧]
 
 ## Technologies
-- Python
-- ETL
-- Data Engineering
-- PySpark
-- AWS
+`Python`  `Time Series`  `Forecasting`  `Website Traffic`  `Prophet` `Metaflow`  `Pandas`  `Scikit-Learn`  `Evaluation`  `MLflow`  `Preprocessing`

@@ -1,28 +1,20 @@
 # Conversational AI Chatbot 🤖
-[← Back to Projects](/projects)
+<a href="/projects" class="inline-flex items-center px-4 py-2 bg-sky-50 text-sky-700 hover:bg-sky-100 rounded-full text-sm font-medium transition-colors duration-300 ease-in-out shadow-sm hover:shadow-md border border-sky-100">← Back to Projects</a>
 
 ## Project Details
 Advanced chatbot application to interact with internal knowledge bases using Retrieval-Augmented Generation (RAG).
-[Detailed description of the project, its purpose, challenges, and solutions]
-
-## Technologies
-- Python
-- Generative AI
-- LLM
-- Vector Database
-- Embeddings
-- Streamlit
 
 ## Key Features
-- Feature 1
-- Feature 2
-- Feature 3
+- [WIP 🚧]
 
 ## My Contribution
-[Technical details about how the project was built]
+[WIP 🚧]
 
 ## Challenges and Solutions
-[Discuss any interesting challenges and how they were overcome]
+- [WIP 🚧]
 
 ## Outcome
-[Summary of the project's impact and value to the organization]
+- [WIP 🚧]
+
+## Technologies
+`Python`  `Generative AI`  `Retrieval-Augmented Generation (RAG)`  `LLMs`  `MLOps`  `Vector Database`  `Embeddings`  `Streamlit` `AWS Bedrock` `AWS ECS`  `AWS ECR`  `AWS Secrets Manager`  `AWS Lambda`  `Azure OpenAI`  `PostgresDB`  `AWS RDS`  `Terraform`

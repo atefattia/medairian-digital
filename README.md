@@ -79,6 +79,7 @@ projects:
       - Python
       - TensorFlow
     link: "#"
+    featured: true  # New feature to highlight projects on the home page
 ```
 
 #### Skills Page (`skills.yml`)
@@ -91,6 +92,13 @@ skills:
       - Deep Learning
       - Computer Vision
 ```
+
+### Featured Projects
+
+- Projects can now be marked as featured by adding `featured: true` in the `projects.yml` file
+- Featured projects will automatically appear on the home page
+- Easily control which projects are highlighted by toggling the `featured` flag
+- Provides a dynamic way to showcase key projects without duplicating project information
 
 ### How to Update Content
 

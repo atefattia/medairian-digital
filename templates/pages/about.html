@@ -44,8 +44,20 @@
             <div class="space-y-8">
                 {% for job in professional_experience %}
                 <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
-                    <h3 class="font-semibold text-xl text-sky-900">{{ job.title }}</h3>
-                    <p class="text-sky-600 font-medium">{{ job.company }} • {{ job.location }}</p>
+                    {% if job.logo %}
+                    <div class="flex items-center gap-4 mb-2">
+                        <img src="{{ job.logo }}" alt="{{ job.company }} Logo" class="h-10 w-auto object-contain">
+                        <div>
+                            <h3 class="font-semibold text-xl text-sky-900">{{ job.title }}</h3>
+                            <p class="text-sky-600 font-medium">{{ job.company }} • {{ job.location }}</p>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div>
+                        <h3 class="font-semibold text-xl text-sky-900">{{ job.title }}</h3>
+                        <p class="text-sky-600 font-medium">{{ job.company }} • {{ job.location }}</p>
+                    </div>
+                    {% endif %}
                     <p class="text-gray-500">{{ job.period }}</p>
                     <ul class="mt-2 text-gray-600 space-y-2 list-disc ml-4">
                         {% for responsibility in job.responsibilities %}
@@ -63,8 +75,20 @@
             <div class="space-y-8">
                 {% for edu in education %}
                 <div class="border-l-4 border-sky-500 pl-6 transition-all duration-300 hover:translate-x-2">
-                    <h3 class="font-semibold text-xl text-sky-900">{{ edu.degree }}</h3>
-                    <p class="text-sky-600 font-medium">{{ edu.institution }} • {{ edu.location }}</p>
+                    {% if edu.logo %}
+                    <div class="flex items-center gap-4 mb-2">
+                        <img src="{{ edu.logo }}" alt="{{ edu.institution }} Logo" class="h-10 w-auto object-contain">
+                        <div>
+                            <h3 class="font-semibold text-xl text-sky-900">{{ edu.degree }}</h3>
+                            <p class="text-sky-600 font-medium">{{ edu.institution }} • {{ edu.location }}</p>
+                        </div>
+                    </div>
+                    {% else %}
+                    <div>
+                        <h3 class="font-semibold text-xl text-sky-900">{{ edu.degree }}</h3>
+                        <p class="text-sky-600 font-medium">{{ edu.institution }} • {{ edu.location }}</p>
+                    </div>
+                    {% endif %}
                     <p class="text-gray-500">{{ edu.period }} • Grade: {{ edu.grade }}</p>
                     {% if edu.focus %}
                     <p class="mt-2 text-gray-600">Focus: {{ edu.focus }}</p>

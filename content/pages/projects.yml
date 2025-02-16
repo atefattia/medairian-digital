@@ -13,6 +13,7 @@ projects:
       - Embeddings
       - Streamlit
     link: "/projects/conversational-ai-chatbot.md"
+    featured: true
 
   - title: TV Ads Attribution
     image: https://picsum.photos/id/91/200/300?grayscale
@@ -78,6 +79,7 @@ projects:
       - HTML
       - CSS
     link: "/projects/monitoring-system.md"
+    featured: true
 
   - title: Anomaly Detection System
     image: https://picsum.photos/id/77/200/300?grayscale

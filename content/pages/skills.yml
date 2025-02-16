@@ -3,28 +3,43 @@ subtitle: Machine Learning, Development, and Tools & Technologies
 
 skills:
   - title: Machine Learning & AI
-    icon: M13 10V3L4 14h7v7l9-11h-7z
+    icon: M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.035-.259a3.375 3.375 0 002.456-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z
     skills:
+      - Discrimative AI
+      - Machine Learning
       - Deep Learning
       - Computer Vision
-      - LSTM-RNN
       - CNN
-      - Face Recognition
-      - Movement Prediction
+      - NLP
+      - Anomaly Detection
+      - Generative AI
+      - LLMs
+      - RAG
+      - Prompt Engineering
+      - Agentic Workflows
 
   - title: Development Skills
-    icon: M13 10V3L4 14h7v7l9-11h-7z
+    icon: M11.49 3.04c-.381-1.374-2.6-1.374-2.98 0l-.807 2.92a1 1 0 01-.95.69h-3.081c-1.438 0-2.037 1.739-1.11 2.608l2.491 2.058a1 1 0 01.364 1.118l-.807 2.92c-.38 1.374 1.108 2.521 2.26 1.642l2.49-2.062a1 1 0 011.24 0l2.49 2.062c1.152.879 2.64-.268 2.26-1.642l-.807-2.92a1 1 0 01.364-1.118l2.49-2.058c.927-.87.328-2.608-1.11-2.608h-3.08a1 1 0 01-.95-.69L11.49 3.04z
     skills:
-      - Backend Development
       - Python
-      - Java
+      - Backend Development
+      - PySpark
+      - Data engineering
+      - CI/CD
+      - DevOps
+      - Bash Scripting
+      - Testing
+      - Deployment
 
   - title: Tools & Technologies
-    icon: M13 10V3L4 14h7v7l9-11h-7z
+    icon: M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z
     skills:
-      - Git
-      - Docker
       - AWS
-      - TensorFlow
-      - PyTorch
-      - OpenCV
+      - Databricks
+      - Docker
+      - MLflow
+      - Metaflow
+      - Pytorch
+      - Git
+      - Gitlab CI
+      - Terraform
