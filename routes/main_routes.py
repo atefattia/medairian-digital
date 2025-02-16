@@ -57,10 +57,6 @@ def project_detail(filename):
 def serve_project_image(filename):
     return send_from_directory('static/images/projects', filename)
 
-@bp.route('/static/images/about/<path:filename>')
-def serve_about_image(filename):
-    return send_from_directory('static/images/about', filename)
-
 @bp.route('/skills')
 def skills():
     content = content_loader.get_page_content('skills')

@@ -43,7 +43,7 @@ professional_experience:
 education:
   - degree: "M.Sc. Computer Science"
     institution: "Karlsruhe Institute of Technology – KIT"
-    logo: "/static/images/about/Logo_KIT.svg"
+    logo: "/static/images/about/KITlogo_farbe-RGB_englisch.jpg"
     location: "Karlsruhe, Germany"
     period: "Oct 2018 - Sep 2020"
     grade: "1.8"
@@ -54,7 +54,7 @@ education:
 
   - degree: "B.Sc. Computer Science"
     institution: "Karlsruhe Institute of Technology – KIT"
-    logo: "/static/images/about/Logo_KIT.svg"
+    logo: "/static/images/about/KITlogo_farbe-RGB_englisch.jpg"
     location: "Karlsruhe, Germany"
     period: "Oct 2014 - Sep 2018"
     grade: "2.4"
