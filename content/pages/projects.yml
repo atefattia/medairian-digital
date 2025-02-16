@@ -25,6 +25,7 @@ projects:
       - PySpark
       - AWS
     link: "/projects/tv-ads-attribution.md"
+    featured: true
 
   - title: IAB Category Recognition
     image: https://picsum.photos/id/57/200/300?grayscale
@@ -79,7 +80,6 @@ projects:
       - HTML
       - CSS
     link: "/projects/monitoring-system.md"
-    featured: true
 
   - title: Anomaly Detection System
     image: https://picsum.photos/id/77/200/300?grayscale
