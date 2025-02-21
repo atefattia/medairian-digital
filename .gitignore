@@ -169,3 +169,40 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Hugging Face specific ignores
+.embedding_cache/
+*.pt
+*.bin
+*.model
+*.safetensors
+.cache/
+huggingface/
+*.lock
+
+# Hugging Face model and tokenizer downloads
+models--*
+tokenizers--*
+
+# Potential large model files
+*.h5
+*.pkl
+*.joblib
+
+# Hugging Face specific logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Python cache files related to Hugging Face
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment and dependency caches
+.env
+.venv
+venv/
+env/
+ENV/

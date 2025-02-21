@@ -120,8 +120,13 @@
         </div>
     </footer>
 
+    <!-- Chat Popup -->
+    {% include 'chat.html' %}
+
     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
     {% block scripts %}{% endblock %}
 </body>
 </html>

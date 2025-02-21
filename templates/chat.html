@@ -1,0 +1,164 @@
+<div id="chat-container" class="chat-container">
+    <div class="chat-header">
+        <h3>
+            <span>👨‍⚕️</span>
+            AI Assistant
+        </h3>
+        <button id="minimize-chat" title="Minimize Chat">−</button>
+    </div>
+    
+    <div id="chat-messages" class="chat-messages"></div>
+    
+    <div class="chat-input-wrapper">
+        <input 
+            type="text" 
+            id="chat-input" 
+            class="chat-input" 
+            placeholder="Type your message..."
+        >
+        <button id="chat-send" class="chat-send-btn" title="Send">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </button>
+    </div>
+    
+    <div id="typing-indicator" class="typing-indicator">
+        🤖 AI is typing...
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+<script>
+    // Chat UI Elements
+    const chatContainer = document.getElementById('chat-container');
+    const chatMessages = document.getElementById('chat-messages');
+    const chatInput = document.getElementById('chat-input');
+    const chatSend = document.getElementById('chat-send');
+    const typingIndicator = document.getElementById('typing-indicator');
+    const minimizeChat = document.getElementById('minimize-chat');
+
+    // Socket Configuration
+    let socket = null;
+    let isMinimized = false;
+
+    // Socket Initialization Function
+    function initializeSocket() {
+        // Disconnect existing socket if it exists
+        if (socket) {
+            socket.disconnect();
+        }
+
+        // Create new socket connection
+        socket = io({
+            transports: ['websocket', 'polling'],
+            reconnection: true,
+            reconnectionAttempts: 5,
+            reconnectionDelay: 1000,
+            timeout: 5000
+        });
+
+        // Connection Event Handlers
+        socket.on('connect', () => {
+            console.log('Socket Connected. Socket ID:', socket.id);
+            addMessage('bot', '🤖 Connected and ready to help!');
+            
+            // Reset input state
+            chatInput.disabled = false;
+            chatSend.disabled = false;
+        });
+
+        socket.on('disconnect', (reason) => {
+            console.error('Socket Disconnected. Reason:', reason);
+            addMessage('bot', `🤖 Disconnected. Reason: ${reason}`);
+            
+            // Disable input
+            chatInput.disabled = true;
+            chatSend.disabled = true;
+        });
+
+        socket.on('connect_error', (error) => {
+            console.error('Connection Error:', error);
+            addMessage('bot', '🤖 Connection error. Retrying...');
+        });
+
+        // Bot Response Handler
+        socket.on('bot_response', (data) => {
+            hideTypingIndicator();
+            addMessage('bot', data.message);
+        });
+    }
+
+    // Minimize Chat Functionality
+    minimizeChat.addEventListener('click', () => {
+        isMinimized = !isMinimized;
+        chatContainer.classList.toggle('chat-minimized');
+        chatMessages.style.display = isMinimized ? 'none' : 'block';
+        chatInput.style.display = isMinimized ? 'none' : 'block';
+        typingIndicator.style.display = isMinimized ? 'none' : 'block';
+    });
+
+    // Send Message Function
+    function sendMessage() {
+        const message = chatInput.value.trim();
+        
+        // Validate message and socket connection
+        if (!message) {
+            addMessage('bot', '🤖 Please enter a message.');
+            return;
+        }
+
+        if (!socket || !socket.connected) {
+            console.warn('Socket not connected. Current state:', 
+                socket ? 'Socket exists, not connected' : 'No socket');
+            initializeSocket();
+            return;
+        }
+
+        try {
+            // Attempt to send message
+            addMessage('user', message);
+            socket.emit('chat_message', { message: message });
+            showTypingIndicator();
+            chatInput.value = '';
+        } catch (error) {
+            console.error('Message sending error:', error);
+            addMessage('bot', '🤖 Failed to send message. Please try again.');
+        }
+    }
+
+    // Event Listeners for Sending Messages
+    chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendMessage();
+    });
+
+    // Utility Functions
+    function showTypingIndicator() {
+        typingIndicator.style.display = 'block';
+    }
+
+    function hideTypingIndicator() {
+        typingIndicator.style.display = 'none';
+    }
+
+    function addMessage(sender, message) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message', sender);
+        messageElement.textContent = message;
+        chatMessages.appendChild(messageElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Initialize Socket on Page Load
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeSocket();
+
+        // Reinitialize on page visibility change
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                initializeSocket();
+            }
+        });
+    });
+</script>
