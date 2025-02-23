@@ -34,11 +34,28 @@ professional_experience:
     company: "ProSiebenSat.1 Media SE"
     logo: "/static/images/about/P7S1_BM_Red_pos_RGB.ico"
     location: "Munich, Germany"
-    period: "Dec 2021 - Apr 2022"
+    period: "Feb 2021 - Apr 2022"
     responsibilities:
       - "Refactored and migrated TV attribution system to AWS, reducing infrastructure costs by 60%."
       - "Implemented monitoring solutions for complex data pipelines, decreasing daily ops by 20%."
       - "Trained classification models for user behavior prediction to enhance targeting efficiency."
+
+  - title: "Master Thesis - Data Scientist"
+    company: "Porsche Digital GmbH"
+    logo: "/static/images/about/Porsche-Digital-Logo.png"
+    location: "Ludwigsburg, Germany"
+    period: "Mar 2020 - Sep 2020"
+    responsibilities:
+      - "Applied unsupervised learning techniques for anomaly detection on acoustic signals using Keras and Python."
+      - "Designed and trained an Improved Deep Embedded Clustering (IDEC) model to extract features and cluster anomalous and non-anomalous acoustic signals."
+
+  - title: "Working Student - Data Analyst"
+    company: "Siemens AG"
+    logo: "/static/images/about/Siemens.jpg"
+    location: "Karlsruhe, Germany"
+    period: "Nov 2018 - Apr 2020"
+    responsibilities:
+      - "Created real-time Qlik Sense reports to improve monitoring of 8D reports for manufacturing nonconformances, providing management with better progress visibility."
 
 education:
   - degree: "M.Sc. Computer Science"
