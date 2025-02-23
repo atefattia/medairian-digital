@@ -12,15 +12,19 @@ core_expertise:
   skills:
     - title: "Machine Learning"
       description: "Expertise in developing and deploying sophisticated ML models for real-world applications, with focus on scalability and performance."
+      icon: "fas fa-laptop-code"
     
     - title: "Data Engineering"
       description: "Designing and implementing efficient data pipelines, ETL processes, and data storage solutions to support analytics and machine learning workflows."
+      icon: "fas fa-database"
     
     - title: "MLOps"
       description: "Building and maintaining robust ML pipelines with automated testing, deployment, and monitoring systems."
+      icon: "fas fa-cogs"
     
     - title: "Cloud Computing"
       description: "Expertise in AWS cloud services, infrastructure as code, and building scalable distributed systems."
+      icon: "fas fa-cloud"
 
 featured_projects:
   title: "Featured Projects"
