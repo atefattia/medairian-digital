@@ -21,14 +21,12 @@ navigation:
 footer:
   copyright: "Med.AI.rian. All rights reserved."
   links:
-    - text: "Privacy Policy"
-      url: "#"
-    - text: "Terms of Service"
-      url: "#"
-    - text: "Blog"
+    - text: "About"
+      url: "/about"
+    - text: "Projects"
+      url: "/projects"
+    - text: "Articles"
       url: "/articles"
-    - text: "Careers"
-      url: "#"
 
 contact:
   email: "medairian@gmail.com"
