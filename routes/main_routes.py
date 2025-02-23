@@ -50,8 +50,10 @@ def project_detail(filename):
         markdown_content = f.read()
         html_content = markdown2.markdown(markdown_content, extras=['fenced-code-blocks', 'tables'])
     
+    source_page = request.args.get('from', 'projects')  # Default to 'projects' if not provided
+    source_page = '' if source_page == 'home' else source_page
     # Render the new template
-    return render_template('pages/project_detail.html', markdown_content=html_content)
+    return render_template('pages/project_detail.html', markdown_content=html_content, source_page=source_page)
 
 @bp.route('/static/images/projects/<path:filename>')
 def serve_project_image(filename):

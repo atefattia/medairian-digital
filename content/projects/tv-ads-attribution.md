@@ -1,5 +1,4 @@
 # TV Ads Attribution 📺
-<a href="/projects" class="inline-flex items-center px-4 py-2 bg-sky-50 text-sky-700 hover:bg-sky-100 rounded-full text-sm font-medium transition-colors duration-300 ease-in-out shadow-sm hover:shadow-md border border-sky-100">← Back to Projects</a>
 
 ## Project Details
 This tool measures the short-term online impact of TV advertisements by analyzing post-spot visit spikes and calculating website traffic attribution. This system helps businesses evaluate the effectiveness of their TV campaigns by tracking key performance indicators (KPIs) such as website visits and conversions. It supports TV spots from various sources and integrates seamlessly with user tracking platforms like [Google Analytics](https://marketingplatform.google.com/about/analytics/), [Mapp](https://mapp.com/), and [Adjust](https://www.adjust.com/), enabling a comprehensive evaluation of TV campaign performance across multiple channels.

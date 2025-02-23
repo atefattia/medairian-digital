@@ -147,6 +147,10 @@
 <body class="bg-sky-50">
     <div class="article-container">
         <article class="prose lg:prose-xl">
+            <a href="/{{ source_page }}" class="inline-flex items-center px-4 py-2 bg-sky-50 text-sky-700 hover:bg-sky-100 rounded-full text-sm font-medium transition-colors duration-300 ease-in-out shadow-sm hover:shadow-md border border-sky-100 mb-6">
+                ← Back to {{ 'Home' if source_page == '' else 'Projects' }}
+            </a>
+
             <!-- Markdown content will be injected here -->
             {{ markdown_content | safe }}
         </article>
