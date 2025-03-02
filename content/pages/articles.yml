@@ -29,11 +29,11 @@ article_sections:
         link: https://medium.com/@attia.atef92/uv-is-all-you-need-f7f23d764162
         logo: static/images/articles/medium_logo.png
 
-      - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
+      - title: Set Up Your MacBook for Development Like a Pro! 💻
         description: .
         platform: medium
-        tags: ['LLM', 'AI', 'ChatGPT']
-        link: https://medium.com/@attia.atef92/the-evolution-of-large-language-models-llms-from-gpt-3-to-gpt-4-and-beyond-ba5d8c6b58d1
+        tags: ['Coding', 'MacOS', 'Productivity', 'Python']
+        link: https://medium.com/@attia.atef92/set-up-your-macbook-for-development-like-a-pro-7973626f9667
         logo: static/images/articles/medium_logo.png
 
   - name: Data Pipelines
