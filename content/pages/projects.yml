@@ -27,7 +27,7 @@ projects:
     link: "/projects/tv-ads-attribution.md"
     featured: true
 
-  - title: IAB Category Recognition
+  - title: IAB Category Recognition WIP 🚧
     image: https://picsum.photos/id/57/200/300?grayscale
     description: IAB category classification of video content for contextual targeting. 
     tags:
@@ -38,7 +38,7 @@ projects:
       - BERT
     link: "/projects/iab-category-recognition.md"
 
-  - title: Data Pipeline Automation
+  - title: Data Pipeline Automation WIP 🚧
     image: https://picsum.photos/id/58/200/300
     description: Automated data processing and transformation pipeline.
     tags:
@@ -49,7 +49,7 @@ projects:
       - Data Engineering
     link: "/projects/data-pipeline-automation.md"
 
-  - title: Time Series Forecasting
+  - title: Time Series Forecasting WIP 🚧
     image: https://picsum.photos/id/116/200/300?grayscale
     description: Highly scalable metaflow pipelines to train and predict website traffic using time-series forecasting models.
     tags:
@@ -60,7 +60,7 @@ projects:
       - MLOps
     link: "/projects/time-series-forecasting.md"
 
-  - title: User Segmentation 
+  - title: User Segmentation WIP 🚧
     image: https://picsum.photos/id/49/200/300?grayscale
     description: Model for user segmentation and classification based on watching behavior, designed to optimize ads targeting strategies.  
     tags:
@@ -70,7 +70,7 @@ projects:
       - Classification
     link: "/projects/user-segmentation.md" 
 
-  - title: Monitoring System
+  - title: Monitoring System WIP 🚧
     image: https://picsum.photos/id/270/200/300?grayscale
     description: Monitoring web application for an improved data pipeline monitoring and alerting.
     tags:
@@ -81,7 +81,7 @@ projects:
       - CSS
     link: "/projects/monitoring-system.md"
 
-  - title: Anomaly Detection System
+  - title: Acoustic Anomaly Detection
     image: https://picsum.photos/id/77/200/300?grayscale
     description: System for detecting anomalies in acoustic signal using unsupervised learning techniques.
     tags:
@@ -90,9 +90,9 @@ projects:
       - Anomaly Detection
       - CNN
       - Clustering
-    link: "/projects/anomaly-detection-system.md"
+    link: "/projects/acoustic-anomaly-detection.md"
 
-  - title: Reporting Dashboard
+  - title: Reporting Dashboard WIP 🚧
     image: https://picsum.photos/id/78/200/300?grayscale
     description: Real-time reporting dashboard for monitoring of 8D reports for manufacturing nonconformities.
     tags:
