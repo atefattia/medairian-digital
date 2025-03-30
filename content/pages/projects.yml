@@ -27,7 +27,7 @@ projects:
     link: "/projects/tv-ads-attribution.md"
     featured: true
 
-  - title: IAB Category Recognition WIP 🚧
+  - title: IAB Category Service
     image: https://picsum.photos/id/57/200/300?grayscale
     description: IAB category classification of video content for contextual targeting. 
     tags:
@@ -36,7 +36,7 @@ projects:
       - Transcriber
       - Natural Language Processing
       - BERT
-    link: "/projects/iab-category-recognition.md"
+    link: "/projects/iab-category-service.md"
 
   - title: Data Pipeline Automation WIP 🚧
     image: https://picsum.photos/id/58/200/300
