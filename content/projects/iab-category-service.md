@@ -3,6 +3,8 @@
 ## Project Details
 The IAB Categorization Service is a contextual targeting tool designed to enhance content prediction by leveraging the [V3 IAB taxonomies](https://github.com/InteractiveAdvertisingBureau/Taxonomies/blob/develop/Content%20Taxonomies/Content%20Taxonomy%203.1.tsv). This service predicts and categorizes topics within specific content types, such as video transcripts, enabling businesses to refine their content targeting strategies.
 
+![IAB Categorization Workflow](/static/images/projects/iab_categorization.svg)
+
 The service is a key component of a broader workflow that ingests video content into AWS S3, transcribes it using the open-source Whisper model from Hugging Face, applies IAB categorization based on the transcripts, and finally exports the results to an external system. This automated pipeline streamlines content classification and enhances contextual understanding for digital advertising.
 
 ## Key Features
@@ -19,7 +21,7 @@ The service is a key component of a broader workflow that ingests video content 
 - **Prediction Storage & API Access**: Stores categorized predictions in an AWS RDS database, exposing them via a FastAPI service to enable seamless access for other applications and services.
 
 ## My Contribution
-I led the end-to-end design, development, and deployment of the IAB Categorization Service and topic detection workflow. I designed the system architecture and implemented the workflow, trained a BERT-based model with 110M parameters on AWS SageMaker using 2 GPUs, and conducted experiments with different categorization approaches, including LLM-based few-shot prompting with ChatGPT Turbo 3.5. Additionally, I evaluated the performance of external categorization providers and led the decision-making process that selected GumGum Verity as the best-performing solution. I presented comparative results to management and customers, influencing the final product direction.
+I led the end-to-end design, development, and deployment of the IAB Categorization service and topic detection workflow. I designed the system architecture and implemented the workflow, trained a BERT-based model with 110M parameters on AWS SageMaker using 2 GPUs, and conducted experiments with different categorization approaches, including LLM-based few-shot prompting with ChatGPT Turbo 3.5. Additionally, I evaluated the performance of external categorization providers and led the decision-making process that selected GumGum Verity as the best-performing solution. I presented comparative results to management and customers, influencing the final product direction.
 
 ## Challenges and Solutions
 - **Enhancing Categorization Accuracy**: Certain categories, especially sensitive topics, were not consistently predicted by GumGum. To improve this, we implemented a flexible set of business rules that can be easily toggled on or off, allowing for refined predictions that better align with customer expectations.

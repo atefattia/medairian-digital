@@ -3,7 +3,7 @@ subtitle: A collection of projects that tell my story.
 
 projects:
   - title: Conversational AI Chatbot
-    image: https://picsum.photos/id/71/200/300?grayscale
+    image: /static/images/projects/sailly.svg
     description: Advanced chatbot application to interact with internal knowledge bases using Retrieval-Augmented Generation (RAG).
     tags:
       - Python
@@ -16,7 +16,7 @@ projects:
     featured: true
 
   - title: TV Ads Attribution
-    image: https://picsum.photos/id/91/200/300?grayscale
+    image: /static/images/projects/tv_ads_attribution.svg
     description: A tool to measure the short-term online impact of TV ads by analyzing post-spot visit spikes and calculating website traffic attribution. 
     tags:
       - Python
@@ -28,7 +28,7 @@ projects:
     featured: true
 
   - title: IAB Category Service
-    image: https://picsum.photos/id/57/200/300?grayscale
+    image: /static/images/projects/iab_categorization.svg
     description: IAB category classification of video content for contextual targeting. 
     tags:
       - GumGum
@@ -37,6 +37,7 @@ projects:
       - Natural Language Processing
       - BERT
     link: "/projects/iab-category-service.md"
+    featured: true
 
   - title: Data Pipeline Automation WIP 🚧
     image: https://picsum.photos/id/58/200/300
