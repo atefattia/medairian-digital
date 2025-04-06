@@ -83,7 +83,7 @@ projects:
     link: "/projects/monitoring-system.md"
 
   - title: Acoustic Anomaly Detection
-    image: https://picsum.photos/id/77/200/300?grayscale
+    image: /static/images/projects/acoustic_anomaly_detection.svg
     description: System for detecting anomalies in acoustic signal using unsupervised learning techniques.
     tags:
       - Deep Learning
