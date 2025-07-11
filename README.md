@@ -5,17 +5,20 @@ A modern web application showcasing my professional experience as a Senior Machi
 ## Setup Instructions
 
 1. Create a virtual environment:
+
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Unix/macOS
+python -m venv .venv
+source .venv/bin/activate  # On Unix/macOS
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Run the application:
+
 ```bash
 python app.py
 ```
@@ -49,16 +52,20 @@ medairian-digital/
 The website uses a YAML-based content management system that makes it easy to update content without touching the HTML templates. All content is stored in the `content/` directory:
 
 ### Base Content (`content/base.yml`)
+
 Contains site-wide content such as:
+
 - Site name and description
 - Navigation menu items
 - Footer content and links
 - Contact information
 
 ### Page Content (`content/pages/`)
+
 Each page has its own YAML file for easy content management:
 
 #### Home Page (`home.yml`)
+
 ```yaml
 hero:
   title: "Welcome to Med.AI.rian 🌊"
@@ -69,6 +76,7 @@ hero:
 ```
 
 #### Projects Page (`projects.yml`)
+
 ```yaml
 title: Projects
 projects:
@@ -83,6 +91,7 @@ projects:
 ```
 
 #### Skills Page (`skills.yml`)
+
 ```yaml
 title: Skills & Expertise
 subtitle: Machine Learning, Development, and Tools
@@ -133,6 +142,7 @@ The templates will automatically update to reflect any changes made to these YAM
    - Install [Git](https://git-scm.com/)
 
 2. **Prepare the Application**:
+
    ```bash
    # Create Procfile
    echo "web: gunicorn app:app" > Procfile
@@ -142,6 +152,7 @@ The templates will automatically update to reflect any changes made to these YAM
    ```
 
 3. **Deploy to Heroku**:
+
    ```bash
    # Login to Heroku
    heroku login
@@ -154,6 +165,7 @@ The templates will automatically update to reflect any changes made to these YAM
    ```
 
 4. **Set Up Domain**:
+
    ```bash
    # Add domain to Heroku
    heroku domains:add www.medairian.ai
@@ -162,10 +174,13 @@ The templates will automatically update to reflect any changes made to these YAM
 
 5. **Configure DNS**:
    - Get the DNS target from Heroku:
+
      ```bash
      heroku domains
      ```
+
    - Add these records to your domain registrar:
+
      ```
      CNAME www -> [your-heroku-dns-target]
      ALIAS/ANAME @ -> [your-heroku-dns-target]
@@ -184,6 +199,7 @@ The templates will automatically update to reflect any changes made to these YAM
      - API keys
      - Database credentials
      - Secret keys
+
      ```bash
      # On Heroku
      heroku config:set SECRET_KEY=your_secret_key
