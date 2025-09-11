@@ -6,7 +6,7 @@ This project enhances TV ad attribution by introducing a forecasting-based basel
 
 We used [Prophet](https://facebook.github.io/prophet/docs/quick_start.html), an open-source forecasting model, to capture complex seasonality and trend patterns while supporting additional features. The end-to-end pipeline was developed and deployed using [Metaflow](https://metaflow.org/), Netflix’s open-source framework for orchestrating machine learning workflows.
 
-![Time Series Forecasting - MLOps](/static/images/projects/sailly.svg)
+![Time Series Forecasting - MLOps](/static/images/projects/time_series_forecasting.svg)
 
 The system retrains models daily with the last 6 weeks of traffic data, ensuring forecasts incorporate the latest behavioral trends.
 
@@ -18,7 +18,7 @@ The system retrains models daily with the last 6 weeks of traffic data, ensuring
 
 ## My Contribution
 
-I contributed to the design and development of the abstraction layer that dynamically builds machine learning pipelines from configuration files, enabling flexible experimentation and deployment. As part of this, I developed three core pipelines: a training pipeline to train new models and register them in MLflow, an inference pipeline to load trained models from MLflow and generate website traffic predictions, and an evaluation pipeline to run multiple experiments in parallel with different configurations while tracking results in MLflow. I also played a key role in selecting the best-performing model, tuning its hyperparameters, and engineering features to improve its performance. Finally, I productionalized the training and inference pipelines in AWS, ensuring the system could run automatically and scale to meet the demands of daily operations.
+I contributed to the design and development of the abstraction layer that dynamically builds machine learning pipelines from configuration files, enabling flexible experimentation and deployment. As part of this, I developed three core pipelines: a training pipeline to train new models and register them in MLflow, an inference pipeline to load trained models from MLflow and generate website traffic predictions, and an evaluation pipeline to run multiple experiments in parallel with different configurations while tracking results in MLflow. I also played a key role in selecting the best-performing model, tuning its hyperparameters, and engineering features to improve its performance. Finally, I productionalized the training and inference pipelines in AWS, ensuring the system could run automatically and scale to meet the demands of daily operations. Beyond development, I shared our approach publicly: I presented how we leveraged scikit-learn Pipelines with Metaflow at the DataGeeks Conference [P7S1 x Munich Datageeks](https://medium.com/tech-p7s1/to-production-and-beyond-how-metaflow-helps-us-turn-proof-of-concepts-into-products-6944e1493935).
 
 ## Challenges and Solutions
 

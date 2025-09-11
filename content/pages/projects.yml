@@ -51,7 +51,7 @@ projects:
     link: "/projects/data-pipeline-automation.md"
 
   - title: Time Series Forecasting
-    image: https://picsum.photos/id/116/200/300?grayscale
+    image: /static/images/projects/time_series_forecasting.svg
     description: Highly scalable metaflow pipelines to train and predict website traffic using time-series forecasting models.
     tags:
       - Python
