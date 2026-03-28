@@ -24,11 +24,11 @@
 
             <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {% for article in section.articles %}
-                <div class="bg-white rounded-lg shadow-sm border border-sky-100 hover:shadow-md transition-all duration-300 group relative">
-                    <a href="{{ article.link }}" target="_blank" class="block p-4 pb-2">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 mt-1">
-                                <div class="h-8 w-8 rounded-lg bg-white border border-sky-100 flex items-center justify-center overflow-hidden">
+                <div class="bg-white rounded-lg shadow-sm border border-sky-100 hover:shadow-md transition-all duration-300 group">
+                    <a href="{{ article.link }}" target="_blank" class="flex flex-col h-full p-3">
+                        <div class="flex items-start space-x-3 flex-1">
+                            <div class="flex-shrink-0 mt-0.5">
+                                <div class="h-7 w-7 rounded-md bg-white border border-sky-100 flex items-center justify-center overflow-hidden">
                                     {% if article.platform == 'medium' %}
                                     <img src="{{ article.logo }}" alt="{{ article.platform }} logo" class="h-full w-full object-contain">
                                     {% elif article.platform == 'substack' %}
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                             <div class="flex-1">
-                                <h4 class="text-base font-semibold text-sky-900 group-hover:text-sky-700 transition-colors">
+                                <h4 class="text-sm font-semibold text-sky-900 group-hover:text-sky-700 transition-colors leading-snug">
                                     {{ article.title }}
                                 </h4>
                                 {% if article.tags %}
@@ -57,12 +57,12 @@
                                 {% endif %}
                             </div>
                         </div>
+                        <div class="flex justify-end mt-2">
+                            <svg class="h-4 w-4 text-sky-500 group-hover:text-sky-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </div>
                     </a>
-                    <div class="absolute bottom-0 right-0 p-3">
-                        <svg class="h-5 w-5 text-sky-500 group-hover:text-sky-700 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </div>
                 </div>
                 {% endfor %}
             </div>
