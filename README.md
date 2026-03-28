@@ -1,50 +1,50 @@
 # Med.AI.rian - Professional Portfolio
 
-A modern web application showcasing my professional experience as a Senior Machine Learning Engineer. The name Med.AI.rian represents my Tunisian roots (Mediterranean) combined with my expertise in Artificial Intelligence.
+A modern web application showcasing my professional experience as a Senior Generative AI Engineer. The name Med.AI.rian represents my Tunisian roots (Mediterranean) combined with my expertise in Artificial Intelligence.
 
 ## Setup Instructions
 
-1. Create a virtual environment:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Unix/macOS
-```
+1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 2. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 3. Run the application:
 
 ```bash
-python app.py
+make run
 ```
+
+## Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `make run` | Run the app locally (debug mode) |
+| `make login` | Login to Heroku CLI |
+| `make deploy` | Deploy to Heroku |
+| `make help` | Show all available commands |
 
 ## Project Structure
 
 ```
 medairian-digital/
 ├── app.py                  # Main application entry point
-├── config.py              # Configuration settings
-├── content/              # Content management
-│   ├── base.yml         # Base content (navigation, footer)
-│   └── pages/           # Page-specific content
-│       ├── home.yml     # Home page content
-│       ├── contact.yml  # Contact page content
-│       ├── projects.yml # Projects page content
-│       └── skills.yml   # Skills page content
-├── static/               # Static files (CSS, JS, images)
-│   ├── css/             # Stylesheets
-│   ├── js/              # JavaScript files
-│   └── images/          # Image assets
-├── templates/           # Jinja2 templates
-│   ├── base.html       # Base template
-│   ├── components/     # Reusable components
-│   └── pages/          # Page-specific templates
-└── routes/             # Route handlers
+├── config.py               # Configuration settings
+├── pyproject.toml          # Dependencies (uv)
+├── uv.lock                 # Locked dependencies
+├── Makefile                # Dev/deploy commands
+├── Procfile                # Heroku process definition
+├── content/                # Content management
+│   ├── base.yml            # Base content (navigation, footer)
+│   ├── pages/              # Page-specific content
+│   └── projects/           # Project detail Markdown files
+├── static/                 # Static files (CSS, JS, images)
+├── templates/              # Jinja2 templates
+├── routes/                 # Route handlers
+└── utils/                  # Utilities (content loader)
 ```
 
 ## Content Management
@@ -69,7 +69,7 @@ Each page has its own YAML file for easy content management:
 ```yaml
 hero:
   title: "Welcome to Med.AI.rian 🌊"
-  subtitle: "Hi 👋 I'm Atef Attia — Senior Machine Learning Engineer"
+  subtitle: "Hi 👋 I'm Atef Attia — Senior Generative AI Engineer"
   buttons:
     - text: "View Projects"
       link: "/projects"
@@ -134,103 +134,46 @@ The templates will automatically update to reflect any changes made to these YAM
 
 ## Deployment
 
-### Option 1: Heroku (Recommended for Simplicity)
+The app is deployed on Heroku using [uv](https://docs.astral.sh/uv/). Heroku automatically detects `uv.lock` and runs `uv sync --locked --no-default-groups` during build.
 
-1. **Prerequisites**:
-   - Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
-   - Create a Heroku account
-   - Install [Git](https://git-scm.com/)
+### First-time Setup
 
-2. **Prepare the Application**:
+1. Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+2. Login and link the app:
 
    ```bash
-   # Create Procfile
-   echo "web: gunicorn app:app" > Procfile
-   
-   # Add gunicorn to requirements
-   echo "gunicorn==21.2.0" >> requirements.txt
+   make login
+   heroku git:remote -a <your-app-name>
    ```
 
-3. **Deploy to Heroku**:
+3. Set environment variables:
 
    ```bash
-   # Login to Heroku
-   heroku login
-   
-   # Create Heroku app
-   heroku create medairian-digital
-   
-   # Push to Heroku
-   git push heroku main
+   heroku config:set MAIL_PASSWORD=your_mail_password
    ```
 
-4. **Set Up Domain**:
+### Deploy
 
-   ```bash
-   # Add domain to Heroku
-   heroku domains:add www.medairian.ai
-   heroku domains:add medairian.ai
-   ```
+```bash
+make login
+make deploy
+```
 
-5. **Configure DNS**:
-   - Get the DNS target from Heroku:
+### Custom Domain
 
-     ```bash
-     heroku domains
-     ```
+```bash
+heroku domains:add www.medairian.ai
+heroku domains:add medairian.ai
+```
 
-   - Add these records to your domain registrar:
+Then add DNS records at your domain registrar:
 
-     ```
-     CNAME www -> [your-heroku-dns-target]
-     ALIAS/ANAME @ -> [your-heroku-dns-target]
-     ```
+```
+CNAME www -> [your-heroku-dns-target]
+ALIAS/ANAME @ -> [your-heroku-dns-target]
+```
 
-### Important Considerations
-
-1. **SSL Certificate**:
-   - Always use HTTPS
-   - Let's Encrypt provides free SSL certificates
-   - Set up auto-renewal for certificates
-
-2. **Environment Variables**:
-   - Never commit sensitive data to Git
-   - Use environment variables for:
-     - API keys
-     - Database credentials
-     - Secret keys
-
-     ```bash
-     # On Heroku
-     heroku config:set SECRET_KEY=your_secret_key
-     ```
-
-3. **Backups**:
-   - Regularly backup any user-generated content
-   - Keep database backups if you add one later
-
-4. **Monitoring**:
-   - Set up uptime monitoring (e.g., UptimeRobot)
-   - Monitor error logs
-   - Set up alerts for server issues
-
-5. **Performance**:
-   - Use a CDN for static files (e.g., Cloudflare)
-   - Enable caching where appropriate
-   - Optimize images and assets
-
-6. **Security**:
-   - Keep all packages updated
-   - Set up firewall rules
-   - Regular security audits
-   - Enable rate limiting for APIs
-
-7. **Costs to Consider**:
-   - Domain registration (~$70-100/year for .ai)
-   - Hosting ($5-20/month)
-   - SSL certificate (free with Let's Encrypt)
-   - CDN (optional, often has free tier)
-   - Backup storage (if needed)
+Get the DNS target with `heroku domains`.
 
 ## Features
 
@@ -238,6 +181,6 @@ The templates will automatically update to reflect any changes made to these YAM
 - YAML-based content management
 - Smooth page transitions
 - Easy to maintain and extend
-- Professional showcase of ML engineering skills
+- Professional showcase of Generative AI engineering skills
 - Dynamic Projects and Skills pages
 - Contact information
