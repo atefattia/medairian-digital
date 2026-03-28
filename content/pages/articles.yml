@@ -3,6 +3,12 @@ subtitle: Explore my collection of blogs and articles.
 article_sections:
   - name: AI & Machine Learning
     articles:
+      - title: "Handoff vs. Supervisor: Why Your Multi-Agent Architecture Choice Matters \U0001F916"
+        platform: medium
+        tags: ['Multi-Agent Systems', 'LangGraph', 'AI Architecture']
+        link: https://medium.com/p/40cadb0e0dc2
+        logo: static/images/articles/medium_logo.png
+
       - title: The Evolution of Large Language Models (LLMs) - From GPT-3 to GPT-4 and Beyond 🚀
         platform: medium
         tags: ['LLM', 'AI', 'ChatGPT']
