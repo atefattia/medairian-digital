@@ -1,0 +1,17 @@
+[project]
+name = "medairian-digital"
+version = "0.1.0"
+description = "Personal portfolio website for a Senior ML Engineer"
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=2.3.3",
+    "python-dotenv>=1.0.1",
+    "flask-assets>=2.1.0",
+    "werkzeug>=3.0.1",
+    "jinja2>=3.1.2",
+    "flask-sqlalchemy>=3.1.1",
+    "flask-mail>=0.9.1",
+    "pyyaml>=6.0.1",
+    "gunicorn>=21.2.0",
+    "markdown2>=2.5.3",
+]
